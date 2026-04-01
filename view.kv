@@ -1,0 +1,29 @@
+#:kivy 1.0
+
+<TipCalculator>:
+    orientation: 'vertical'
+    spacing: 25
+    padding: 20
+
+    Label:
+        text: 'Enter your bill amount below: '
+
+    TextInput:
+        hint_text: "$"
+        on_text: root.bill_input = self.text
+
+    Label:
+        text: root.tip_output
+
+    Button:
+        text: 'Calculate 15% Tip'
+        on_release: root.btn_click_calc_tip(15)
+    
+    Button:
+        text: 'Calculate 20% Tip'
+        on_release: root.btn_click_calc_tip(20)
+    
+    Button:
+        text: 'Calculate 25% Tip'
+        on_release: root.btn_click_calc_tip(25)
+
