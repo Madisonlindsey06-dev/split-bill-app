@@ -10,7 +10,20 @@
 
     TextInput:
         hint_text: "$"
+        multiline: False
         on_text: root.bill_input = self.text
+    Label:
+        text: "Number of People"
+
+    TextInput:
+        id: num_people_input
+        multiline: False
+        input_filter: 'int'
+        on_text: root.num_people_input = self.text
+    Label:
+        text: root.split_output
+        
+    
 
     Label:
         text: root.tip_output
