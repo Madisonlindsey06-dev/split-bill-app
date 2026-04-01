@@ -1,4 +1,4 @@
-from kivy.app import App
+from kivy.app import App 
 from kivy.uix.boxlayout import BoxLayout
 from kivy.properties import StringProperty, NumericProperty
 from model import TipCalculatorModel
